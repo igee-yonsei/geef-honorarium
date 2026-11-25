@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GEEF 2027 Honorarium Documents</title>
+<meta name="robots" content="noindex">
+<style>
+  /* No external fonts or scripts: the page must open in every country, including mainland China. */
+  :root{
+    --ink:#1C3150; --text:#24313F; --muted:#5B6B7B; --rule:#DCE2E8;
+    --tint:#EEF3F8; --ok:#3F7E44; --warn:#A21942; --focus:#0A97D9;
+  }
+  *{box-sizing:border-box}
+  html{font-size:17px}
+  body{margin:0;background:#fff;color:var(--text);
+    font-family:"Segoe UI","Helvetica Neue",Arial,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+    line-height:1.6}
+  .sdg{display:grid;grid-template-columns:repeat(17,1fr);height:8px}
+  .sdg span:nth-child(1){background:#E5243B}.sdg span:nth-child(2){background:#DDA63A}.sdg span:nth-child(3){background:#4C9F38}
+  .sdg span:nth-child(4){background:#C5192D}.sdg span:nth-child(5){background:#FF3A21}.sdg span:nth-child(6){background:#26BDE2}
+  .sdg span:nth-child(7){background:#FCC30B}.sdg span:nth-child(8){background:#A21942}.sdg span:nth-child(9){background:#FD6925}
+  .sdg span:nth-child(10){background:#DD1367}.sdg span:nth-child(11){background:#FD9D24}.sdg span:nth-child(12){background:#BF8B2E}
+  .sdg span:nth-child(13){background:#3F7E44}.sdg span:nth-child(14){background:#0A97D9}.sdg span:nth-child(15){background:#56C02B}
+  .sdg span:nth-child(16){background:#00689D}.sdg span:nth-child(17){background:#19486A}
+  .wrap{max-width:720px;margin:0 auto;padding:0 22px}
+  header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 16px;padding-top:18px;padding-bottom:18px}
+  .logos{display:flex;align-items:center;gap:18px;min-height:40px}
+  .logos img{height:40px;width:auto}
+  .logos .fallback{font-weight:700;color:var(--ink);font-size:.95rem}
+  .lang{display:flex;border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+  .lang button{border:0;background:#fff;color:var(--muted);padding:6px 12px;font:inherit;font-size:.85rem;cursor:pointer;white-space:nowrap}
+  a{color:#00689D}
+  .lang button[aria-pressed="true"]{background:var(--ink);color:#fff}
+  h1{color:var(--ink);font-size:2.1rem;line-height:1.2;margin:28px 0 10px;font-weight:700;letter-spacing:-.01em}
+  .lede{font-size:1.05rem;color:var(--muted);margin:0 0 8px;max-width:62ch}
+  .event{color:var(--ink);font-weight:600;margin:0 0 34px}
+  section.step{display:grid;grid-template-columns:44px 1fr;gap:0 14px;padding:26px 0;border-top:1px solid var(--rule)}
+  section.step[hidden]{display:none}
+  .num{width:34px;height:34px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-weight:700;font-size:.95rem;margin-top:2px}
+  h2{margin:0 0 6px;color:var(--ink);font-size:1.3rem;line-height:1.3}
+  .hint{color:var(--muted);margin:0 0 16px;font-size:.95rem}
+  .q{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:10px 0;border-bottom:1px dashed var(--rule)}
+  .q:last-child{border-bottom:0}
+  .q p{margin:0;font-size:.97rem}
+  .yn{display:flex;gap:6px;flex-shrink:0}
+  .yn label{position:relative}
+  .yn input{position:absolute;opacity:0;width:1px;height:1px}
+  .yn span{display:inline-block;min-width:58px;text-align:center;padding:5px 10px;border:1px solid var(--rule);border-radius:6px;cursor:pointer;font-size:.9rem;color:var(--muted)}
+  .yn input:checked+span{background:var(--ink);border-color:var(--ink);color:#fff}
+  .yn input:focus-visible+span, select:focus-visible, button:focus-visible, a:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+  select{width:100%;max-width:420px;font:inherit;padding:10px 12px;border:1px solid #AEB9C5;border-radius:6px;background:#fff;color:var(--text)}
+  .result{background:var(--tint);border-left:5px solid var(--ink);padding:16px 18px;margin:4px 0 0;border-radius:0 6px 6px 0}
+  .result.warn{border-left-color:var(--warn)}
+  .result.ok{border-left-color:var(--ok)}
+  .result h3{margin:0 0 6px;font-size:1.08rem;color:var(--ink)}
+  .result p{margin:0 0 8px}
+  .docs{margin:14px 0 0;padding:0;list-style:none}
+  .docs li{padding:10px 0 10px 30px;position:relative;border-top:1px solid var(--rule)}
+  .docs li:first-child{border-top:0}
+  .docs li::before{content:"";position:absolute;left:4px;top:16px;width:12px;height:12px;border:2px solid var(--ink);border-radius:3px}
+  .docs strong{color:var(--ink)}
+  .dl{display:inline-block;margin-top:8px;background:var(--ink);color:#fff;text-decoration:none;padding:9px 16px;border-radius:6px;font-weight:600;font-size:.95rem}
+  .dl:hover{background:#0F2340}
+  .small{font-size:.88rem;color:var(--muted)}
+  .send dl{display:grid;grid-template-columns:max-content 1fr;gap:8px 18px;margin:0}
+  .send dt{color:var(--muted)}
+  .send dd{margin:0;font-weight:600;color:var(--ink);word-break:break-word}
+  .note{margin-top:14px;padding:12px 14px;border:1px solid var(--rule);border-radius:6px;font-size:.93rem}
+  footer{border-top:1px solid var(--rule);margin-top:10px;padding:22px 0 40px;color:var(--muted);font-size:.85rem}
+  footer p{margin:0 0 6px}
+  .error{color:var(--warn)}
+  @media (max-width:560px){
+    html{font-size:16px}
+    h1{font-size:1.7rem}
+    section.step{grid-template-columns:1fr}
+    .num{margin-bottom:8px}
+    .q{flex-direction:column;align-items:flex-start;gap:6px}
+    .send dl{grid-template-columns:1fr}
+    .send dd{margin-bottom:6px}
+  }
+</style>
+</head>
+<body>
+<div class="sdg" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+<header>
+  <div class="wrap">
+    <div class="logos">
+      <img src="assets/igee-logo.png" alt="Yonsei Institute for Global Engagement & Empowerment" onerror="this.remove()">
+      <img src="assets/geef-logo.png" alt="GEEF 2027" onerror="this.remove(); document.getElementById('logoText').hidden=false">
+      <span id="logoText" class="fallback" hidden>Yonsei University  |  GEEF 2027</span>
+    </div>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">English</button>
+      <button type="button" data-lang="ko" aria-pressed="false">한국어</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1 data-t="title"></h1>
+  <p class="lede" data-t="lede"></p>
+  <p class="event" id="eventLine"></p>
+
+  <section class="step" id="step1" aria-labelledby="h1s">
+    <div class="num" aria-hidden="true">1</div>
+    <div>
+      <h2 id="h1s" data-t="s1title"></h2>
+      <p class="hint" data-t="s1hint"></p>
+      <div id="questions"></div>
+    </div>
+  </section>
+
+  <section class="step" id="step2" hidden aria-labelledby="h2s">
+    <div class="num" aria-hidden="true">2</div>
+    <div>
+      <h2 id="h2s" data-t="s2title"></h2>
+      <p class="hint" data-t="s2hint"></p>
+      <label for="country" class="small" data-t="s2label"></label><br>
+      <select id="country"><option value="" data-t="s2placeholder"></option></select>
+      <p id="loadError" class="error small" hidden></p>
+    </div>
+  </section>
+
+  <section class="step" id="step3" hidden aria-labelledby="h3s" aria-live="polite">
+    <div class="num" aria-hidden="true" id="num3">3</div>
+    <div>
+      <h2 id="h3s" data-t="s3title"></h2>
+      <div id="result"></div>
+    </div>
+  </section>
+
+  <section class="step send" id="step4" hidden aria-labelledby="h4s">
+    <div class="num" aria-hidden="true" id="num4">4</div>
+    <div>
+      <h2 id="h4s" data-t="s4title"></h2>
+      <dl id="sendList"></dl>
+      <div class="note" data-t="s4note"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p data-t="foot1"></p>
+    <p data-t="foot2"></p>
+    <p id="contactLine"></p>
+  </div>
+</footer>
+
+<script>
+/* ===== Edit these values each year ===== */
+const CONFIG = {
+  event: { en: "GEEF 2027, March 11–12, 2027, Yonsei University, Seoul", ko: "GEEF 2027, 2027년 3월 11일~12일, 연세대학교" },
+  email: "[담당자 업무 메일]",
+  subject: "[GEEF 2027] Honorarium Documents – Your Name",
+  formDeadline: { en: "[form deadline]", ko: "[양식 마감일]" },
+  certDeadline: { en: "[certificate deadline]", ko: "[증명서 마감일]" },
+  finalDeadline: { en: "[final deadline]", ko: "[최종 기한]" },
+  certYear: "2027",
+  forms: {
+    treaty:   "forms/GEEF2027_Honorarium_NonResident_Treaty.xlsx",
+    noTreaty: "forms/GEEF2027_Honorarium_NonResident_NoTreaty.xlsx",
+    resident: "forms/GEEF2027_Honorarium_Resident.xlsx"
+  },
+  countriesCsv: "data/countries.csv"
+};
+/* Examples of how to get a Certificate of Tax Residency (Yonsei Finance & Accounting Team, Dec 2025) */
+const CERT_LINKS = {
+  US: ["Form 6166, Certification of U.S. Tax Residency (IRS)", "https://www.irs.gov/individuals/international-taxpayers/form-6166-certification-of-us-tax-residency"],
+  GB: ["Get a certificate of residence (HMRC)", "https://www.gov.uk/guidance/get-a-certificate-of-residence"],
+  DE: ["Certificate of residence form (Bundeszentralamt für Steuern)", "https://www.bzst.de/SharedDocs/ExterneLinks/DE/BFinV-Formularserver/034450_ansaessigkeitsbescheinigung_englisch.html"],
+  JP: ["居住者証明書 (National Tax Agency)", "https://www.nta.go.jp/taxes/shiraberu/taxanswer/osirase/9210.htm"],
+  CN: ["中国税收居民身份证明 (State Taxation Administration)", "https://www.chinatax.gov.cn/chinatax/c102449/c5219873/content.html"],
+  CA: ["Certificate of residency (Canada Revenue Agency)", "https://www.canada.ca/en/revenue-agency/services/tax/international-non-residents/information-been-moved/certificate-residency.html"]
+};
+/* ======================================= */
+
+const T = {
+  en: {
+    title: "Your GEEF 2027 honorarium: what to send us",
+    lede: "Answer a few questions to see which documents we need from you. It takes about two minutes, and nothing you select here is saved or sent anywhere.",
+    s1title: "Where do you pay tax?",
+    s1hint: "Korean tax law decides by where you live, not by your nationality.",
+    q: ["Do you have a home address in Korea?",
+        "Have you stayed in Korea for 183 days or more in the last 12 months?",
+        "Do you have a job that requires you to live in Korea for 183 days or more?",
+        "Do your spouse or children live with you in Korea?",
+        "Do you have assets or other living ties in Korea?"],
+    yes: "Yes", no: "No",
+    s2title: "Which country do you live in?",
+    s2hint: "Choose the country where you are a tax resident.",
+    s2label: "Country of tax residence",
+    s2placeholder: "Choose a country",
+    notListed: "My country is not in this list",
+    loadError: "The country list could not be loaded. Please refresh the page, or email us and we will tell you which documents to send.",
+    s3title: "What to send",
+    s4title: "How to send",
+    s4note: "The form is password-protected. We will send you the password in a separate email. If the form does not open, please use Microsoft Excel or LibreOffice, or reply to our email and we will help.",
+    sendTo: "Email to", subject: "Subject", formBy: "Form by", certBy: "Certificate by",
+    foot1: "This page is a guide only. Yonsei University will confirm the tax treatment of your honorarium based on the documents you send.",
+    foot2: "This page does not collect any information. Please send documents only to the email address above.",
+    contact: "Questions: ",
+    res: {
+      resident: {cls:"", h:"You are treated as a resident of Korea for tax purposes",
+        p:"Your honorarium will be paid to a Korean bank account, with Korean income tax withheld.",
+        docs:[["Information form (Korea resident)","Personal details and your Korean bank account."],
+              ["Copy of your bankbook","Showing the bank name, account number and account holder."]],
+        form:"resident", btn:"Download the form (Korea resident)"},
+      treaty: {cls:"ok", h:"Your country has a tax treaty with Korea",
+        p:"Your honorarium can be paid without Korean tax if we receive your Certificate of Tax Residency.",
+        docs:[["Certificate of Tax Residency for {Y}","Issued by your country's tax authority. Please apply now, as it can take several weeks or months. If your tax authority can only issue a {P} certificate at the moment, please send it and let us know."],
+              ["Information form (tax treaty country)","Personal details for the tax exemption application, and your bank details for the transfer."],
+              ["Your signature on the tax exemption application","We will prepare it for you. You only need to sign it at the forum, or by email if you join online."]],
+        form:"treaty", btn:"Download the form (tax treaty country)",
+        after:"If we do not receive your certificate by the final deadline ({F}), 22% Korean withholding tax will be deducted from your honorarium."},
+      check: {cls:"warn", h:"Your country has a tax treaty with Korea, with special conditions",
+        p:"We need to check whether the tax exemption applies to your honorarium. Please prepare the documents below, and we will let you know the result.",
+        docs:[["Certificate of Tax Residency for {Y}","Issued by your country's tax authority. Please apply now, as it can take several weeks or months."],
+              ["Information form (tax treaty country)","Personal details and your bank details for the transfer."]],
+        form:"treaty", btn:"Download the form (tax treaty country)",
+        after:"If the exemption does not apply, 22% Korean withholding tax will be deducted from your honorarium. You will not need to sign the tax exemption application."},
+      none: {cls:"", h:"Your country does not have a tax treaty with Korea",
+        p:"22% Korean withholding tax will be deducted from your honorarium. You do not need a Certificate of Tax Residency.",
+        docs:[["Information form (no tax treaty)","Personal details for the tax report, and your bank details for the transfer."]],
+        form:"noTreaty", btn:"Download the form (no tax treaty)",
+        after:"If you believe your country has a tax treaty with Korea, please email us before sending the form."}
+    },
+    certExample: "How to apply in your country: "
+  },
+  ko: {
+    title: "GEEF 2027 연사료, 이 서류를 보내 주세요",
+    lede: "몇 가지 질문에 답하시면 보내실 서류를 안내해 드립니다. 2분 정도 걸리며, 이 화면에서 고른 내용은 저장되거나 전송되지 않습니다.",
+    s1title: "세금은 어디에서 내시나요?",
+    s1hint: "국적이 아니라 어디에 살고 계신지로 판단합니다.",
+    q: ["국내에 주소가 있으신가요?",
+        "최근 1년 동안 국내에 183일 이상 머무셨나요?",
+        "국내에 183일 이상 거주해야 하는 직업이 있으신가요?",
+        "배우자나 자녀가 국내에서 함께 살고 있나요?",
+        "국내에 자산 등 생활 기반이 있으신가요?"],
+    yes: "예", no: "아니오",
+    s2title: "어느 나라에 살고 계신가요?",
+    s2hint: "세법상 거주하는 나라를 골라 주세요.",
+    s2label: "거주국",
+    s2placeholder: "나라를 고르세요",
+    notListed: "목록에 우리 나라가 없음",
+    loadError: "나라 목록을 불러오지 못했습니다. 새로 고침하시거나, 메일로 문의하시면 보내실 서류를 안내해 드립니다.",
+    s3title: "보내실 서류",
+    s4title: "보내는 방법",
+    s4note: "양식에는 암호가 걸려 있습니다. 암호는 별도 메일로 보내 드립니다. 양식이 열리지 않으면 Microsoft Excel이나 LibreOffice로 열어 보시고, 그래도 안 되면 메일로 알려 주세요.",
+    sendTo: "보낼 곳", subject: "메일 제목", formBy: "양식 마감", certBy: "증명서 마감",
+    foot1: "이 페이지는 참고용 안내입니다. 연사료의 세금 처리는 보내 주신 서류를 바탕으로 연세대학교가 확정합니다.",
+    foot2: "이 페이지는 어떤 정보도 수집하지 않습니다. 서류는 위 메일 주소로만 보내 주세요.",
+    contact: "문의: ",
+    res: {
+      resident: {cls:"", h:"세법상 국내 거주자에 해당합니다",
+        p:"연사료는 소득세를 원천징수한 뒤 국내 계좌로 지급합니다.",
+        docs:[["지급 정보 양식(국내 거주자)","인적 사항과 국내 지급 계좌를 적어 주세요."],
+              ["통장 사본","은행명, 계좌번호, 예금주가 보이게 보내 주세요."]],
+        form:"resident", btn:"양식 내려받기(국내 거주자)"},
+      treaty: {cls:"ok", h:"한국과 조세조약이 체결된 나라입니다",
+        p:"거주자증명서를 보내 주시면 한국 세금 없이 연사료를 지급할 수 있습니다.",
+        docs:[["{Y}년분 거주자증명서","거주하는 나라의 세무 당국이 발급합니다. 발급에 몇 주에서 몇 달이 걸릴 수 있으니 지금 신청해 주세요. 지금은 {P}년분만 발급된다면 그것을 보내 주시고 알려 주세요."],
+              ["정보 양식(조세조약 체결국)","비과세 신청에 필요한 인적 사항과 송금 계좌를 적어 주세요."],
+              ["비과세·면제 신청서 서명","신청서는 저희가 작성합니다. 포럼 현장에서, 온라인 참석이면 메일로 서명만 해 주시면 됩니다."]],
+        form:"treaty", btn:"양식 내려받기(조세조약 체결국)",
+        after:"최종 기한({F})까지 거주자증명서가 오지 않으면 연사료에서 한국 세금 22%를 원천징수합니다."},
+      check: {cls:"warn", h:"한국과 조세조약이 있지만 조건이 붙은 나라입니다",
+        p:"연사료에 비과세가 적용되는지 저희가 확인해야 합니다. 아래 서류를 준비해 주시면 결과를 알려 드립니다.",
+        docs:[["{Y}년분 거주자증명서","거주하는 나라의 세무 당국이 발급합니다. 발급에 오래 걸릴 수 있으니 지금 신청해 주세요."],
+              ["정보 양식(조세조약 체결국)","인적 사항과 송금 계좌를 적어 주세요."]],
+        form:"treaty", btn:"양식 내려받기(조세조약 체결국)",
+        after:"비과세가 적용되지 않으면 연사료에서 한국 세금 22%를 원천징수하며, 이 경우 신청서 서명은 필요 없습니다."},
+      none: {cls:"", h:"한국과 조세조약이 없는 나라입니다",
+        p:"연사료에서 한국 세금 22%를 원천징수합니다. 거주자증명서는 필요 없습니다.",
+        docs:[["정보 양식(조세조약 미체결국)","세금 신고에 필요한 인적 사항과 송금 계좌를 적어 주세요."]],
+        form:"noTreaty", btn:"양식 내려받기(조세조약 미체결국)",
+        after:"조세조약이 있는 나라라고 생각되시면 양식을 보내기 전에 메일로 알려 주세요."}
+    },
+    certExample: "발급 방법 예시: "
+  }
+};
+
+let lang = "en", countries = [], answers = [null,null,null,null,null], chosen = "";
+const $ = (s) => document.querySelector(s);
+
+function esc(s){ return String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+function fill(s){ return s.replaceAll("{Y}", CONFIG.certYear).replaceAll("{P}", String(+CONFIG.certYear-1)).replaceAll("{F}", CONFIG.finalDeadline[lang]); }
+
+function parseCSV(text){
+  text = text.replace(/^﻿/, "");
+  const rows=[]; let row=[], f="", q=false;
+  for(let i=0;i<text.length;i++){
+    const c=text[i];
+    if(q){ if(c==='"'){ if(text[i+1]==='"'){f+='"';i++;} else q=false; } else f+=c; }
+    else if(c==='"') q=true;
+    else if(c===','){ row.push(f); f=""; }
+    else if(c==='\n'||c==='\r'){ if(c==='\r'&&text[i+1]==='\n') i++; row.push(f); rows.push(row); row=[]; f=""; }
+    else f+=c;
+  }
+  if(f||row.length){ row.push(f); rows.push(row); }
+  const head=rows.shift();
+  return rows.filter(r=>r.length>1).map(r=>Object.fromEntries(head.map((h,i)=>[h,r[i]||""])));
+}
+
+async function loadCountries(){
+  try{
+    const res = await fetch(CONFIG.countriesCsv, {cache:"no-cache"});
+    if(!res.ok) throw new Error(res.status);
+    countries = parseCSV(await res.text()).map(r=>({ko:r["국가"], en:r["영문명"], iso:r["ISO"], code:r["분류코드"]}));
+    renderSelect();
+  }catch(e){ const el=$("#loadError"); el.textContent=T[lang].loadError; el.hidden=false; }
+}
+
+function renderQuestions(){
+  const t=T[lang];
+  $("#questions").innerHTML = t.q.map((q,i)=>`
+    <div class="q" role="radiogroup" aria-label="${esc(q)}">
+      <p>${esc(q)}</p>
+      <div class="yn">
+        <label><input type="radio" name="q${i}" value="yes" ${answers[i]==="yes"?"checked":""}><span>${t.yes}</span></label>
+        <label><input type="radio" name="q${i}" value="no" ${answers[i]==="no"?"checked":""}><span>${t.no}</span></label>
+      </div>
+    </div>`).join("");
+  document.querySelectorAll("#questions input").forEach(inp=>inp.addEventListener("change", e=>{
+    answers[+e.target.name.slice(1)] = e.target.value; update();
+  }));
+}
+
+function renderSelect(){
+  const t=T[lang], sel=$("#country");
+  const list=[...countries].sort((a,b)=>a[lang].localeCompare(b[lang], lang));
+  sel.innerHTML = `<option value="">${esc(t.s2placeholder)}</option>` +
+    list.map(c=>`<option value="${esc(c.iso)}" ${c.iso===chosen?"selected":""}>${esc(c[lang])}</option>`).join("") +
+    `<option value="__none" ${chosen==="__none"?"selected":""}>${esc(t.notListed)}</option>`;
+}
+
+function resultKey(){
+  if(answers.includes("yes")) return "resident";
+  if(answers.includes(null) || !chosen) return null;
+  if(chosen==="__none") return "none";
+  const c=countries.find(x=>x.iso===chosen);
+  if(!c) return null;
+  if(c.code==="N") return "none";
+  if(c.code==="B"||c.code==="X") return "check";
+  return "treaty";
+}
+
+function update(){
+  const t=T[lang], resident=answers.includes("yes"), allAnswered=!answers.includes(null);
+  $("#step2").hidden = resident || !allAnswered;
+  const key=resultKey();
+  $("#step3").hidden = $("#step4").hidden = !key;
+  $("#num3").textContent = resident ? "2" : "3";
+  $("#num4").textContent = resident ? "3" : "4";
+  if(!key) return;
+  const r=t.res[key];
+  let html = `<div class="result ${r.cls}"><h3>${esc(r.h)}</h3><p>${esc(r.p)}</p></div><ul class="docs">` +
+    r.docs.map(d=>`<li><strong>${esc(fill(d[0]))}</strong><br><span class="small">${esc(fill(d[1]))}</span></li>`).join("") + `</ul>`;
+  const link = CERT_LINKS[chosen];
+  if((key==="treaty"||key==="check") && link)
+    html += `<p class="small">${esc(t.certExample)}<a href="${link[1]}" target="_blank" rel="noopener">${esc(link[0])}</a></p>`;
+  html += `<a class="dl" href="${CONFIG.forms[r.form]}" download>${esc(r.btn)}</a>`;
+  if(r.after) html += `<p class="small" style="margin-top:14px">${esc(fill(r.after))}</p>`;
+  $("#result").innerHTML = html;
+  const rows=[[t.sendTo, CONFIG.email],[t.subject, CONFIG.subject],[t.formBy, CONFIG.formDeadline[lang]]];
+  if(key==="treaty"||key==="check") rows.push([t.certBy, CONFIG.certDeadline[lang]]);
+  $("#sendList").innerHTML = rows.map(([a,b])=>`<dt>${esc(a)}</dt><dd>${esc(b)}</dd>`).join("");
+}
+
+function setLang(l){
+  lang=l; document.documentElement.lang=l;
+  document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed", b.dataset.lang===l));
+  document.querySelectorAll("[data-t]").forEach(el=>{ const v=T[l][el.dataset.t]; if(typeof v==="string") el.textContent=v; });
+  $("#eventLine").textContent = CONFIG.event[l];
+  $("#contactLine").textContent = T[l].contact + CONFIG.email;
+  if(!$("#loadError").hidden) $("#loadError").textContent=T[l].loadError;
+  renderQuestions(); if(countries.length) renderSelect(); update();
+}
+
+document.querySelectorAll(".lang button").forEach(b=>b.addEventListener("click", ()=>setLang(b.dataset.lang)));
+$("#country").addEventListener("change", e=>{ chosen=e.target.value; update(); });
+setLang(navigator.language && navigator.language.startsWith("ko") ? "ko" : "en");
+loadCountries();
+</script>
+</body>
+</html>
